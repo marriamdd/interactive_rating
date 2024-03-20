@@ -1,8 +1,9 @@
 import './rate.css';
-
+import { useState } from 'react';
 export default function Rate() {
   let buttons = [1, 2, 3, 4, 5];
-
+const [rate,setRate]=useState(null)
+console.log(rate)
   return (
     <div className="rate_container">
       <h1>How did we do?</h1>
@@ -12,7 +13,7 @@ export default function Rate() {
       </p>
       <div className='btns_container'> 
       {buttons.map((btn,index) => (
-        <button key={index} className="rate">{btn}</button>
+        <button key={index} className="rate" onClick={()=>setRate(btn)} style={rate==btn?{backgroundColor:"#FC7614"}:{}} >{btn}</button>
 
       ))}
       </div>
