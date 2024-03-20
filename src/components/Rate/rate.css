@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+.rate_container{
+    border-radius: 30px;
+    width: 412px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+}
+h1{
+    color: white;
+}
+p{
+    color: var(--Light-Grey, #969FAD);
+font-feature-settings: 'clig' off, 'liga' off;
+
+
+font-family: Overpass;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
