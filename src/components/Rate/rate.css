@@ -1,26 +1,48 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
 }
-.rate_container{
-    border-radius: 30px;
-    width: 412px;
-    padding: 20px;
-    border-radius: 10px;
-    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+.rate_container {
+  border-radius: 30px;
+  width: 412px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
 }
-h1{
-    color: white;
+h1 {
+  color: var(--Pure-White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-p{
-    color: var(--Light-Grey, #969FAD);
-font-feature-settings: 'clig' off, 'liga' off;
+p {
+  color: var(--Light-Grey, #969fad);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.rate {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+.btns_container {
+    display: flex;
+    gap: 21px;
+}
+.submit{
+    width: 341px;
+height: 45px;
+border-radius: 22.5px;
+background: var(--Pure-White, #FFF);
+border: none;
 
-
-font-family: Overpass;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
 }
