@@ -1,6 +1,6 @@
 import './rate.css';
 import { useState } from 'react';
-export default function Rate() {
+export default function Rate({setSubmit}) {
   let buttons = [1, 2, 3, 4, 5];
 const [rate,setRate]=useState(null)
 console.log(rate)
@@ -11,13 +11,13 @@ console.log(rate)
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div className='btns_container'> 
+      <div className='btn_container'> 
       {buttons.map((btn,index) => (
         <button key={index} className="rate" onClick={()=>setRate(btn)} style={rate==btn?{backgroundColor:"#FC7614"}:{}} >{btn}</button>
 
       ))}
       </div>
-      <button className='submit'>Submit</button>
+      <button onClick={()=>setSubmit(true)} className='submit'>Submit</button>
     </div>
   );
 }
