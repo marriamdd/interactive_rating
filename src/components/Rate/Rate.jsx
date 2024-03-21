@@ -6,6 +6,9 @@ export default function Rate({setSubmit,rate,setRate}) {
 
   return (
     <div className="rate_container">
+        <div className="star_div">   
+        <img className="oval" src="/assets/Oval.svg" alt="oval" />
+           <img className="star" src="/assets/Star.svg" alt="star" /></div>
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
