@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import Rate from './components/Rate/Rate'
-import './App.css'
+import { useState } from "react";
+import Rate from "./components/Rate/Rate";
+import "./App.css";
+import Result from "./components/result/Result";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Rate/>
-    </>
-  )
+  const [submit, setSubmit] = useState(false);
+  const [rate,setRate]=useState(null)
+  return <>{submit == true ? <Result rate={rate} /> : <Rate setSubmit={setSubmit}  rate={rate} setRate={setRate} />}</>;
 }
 
-export default App
+export default App;
+

@@ -1,8 +1,38 @@
-.result_container p{
-    color: var(--Orange, #FC7614);
-text-align: center;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
+.result_container {
+  width: 412px;
+  height: 416px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  border-radius: 30px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+.result_container .title {
+  color: var(--Orange, #fc7614);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.content {
+  color: var(--Light-Grey, #969fad);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  width: 340px;
 
+  font-size: 15px;
+
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+h2{
+    color: #FFF;
+font-size: 28px;
+font-weight: 700;
 }
