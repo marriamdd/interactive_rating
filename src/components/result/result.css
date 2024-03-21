@@ -1,0 +1,8 @@
+.result_container p{
+    color: var(--Orange, #FC7614);
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+
+}
