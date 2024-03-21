@@ -1,9 +1,9 @@
 import './rate.css';
 import { useState } from 'react';
-export default function Rate({setSubmit}) {
+export default function Rate({setSubmit,rate,setRate}) {
   let buttons = [1, 2, 3, 4, 5];
-const [rate,setRate]=useState(null)
-console.log(rate)
+
+
   return (
     <div className="rate_container">
       <h1>How did we do?</h1>
@@ -17,7 +17,7 @@ console.log(rate)
 
       ))}
       </div>
-      <button onClick={()=>setSubmit(true)} className='submit'>Submit</button>
+      <button onClick={()=>{rate && setSubmit(true)} }className='submit'>Submit</button>
     </div>
   );
 }
